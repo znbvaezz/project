@@ -47,6 +47,5 @@ Route::prefix('admin')->namespace('Agent')->group(function () {
 
 Route::namespace('Web')->group(function () {
     Route::match(['post', 'get'], '/', 'WebHomeController@index');
-    Route::post('/gateway', 'WebGatewayController@index')->name('gateway
-    ');
+    Route::post('/gateway', 'WebGatewayController@index')->name('gateway');
 });
